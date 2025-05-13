@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="dark">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MX动漫官网-专注在线动漫的樱花动漫备用网站入口</title>
+  <meta name="keywords" content="MX动漫，樱花动漫，风车动漫，age动漫，动漫在线看，动漫网站" />
+  <meta name="description" content="MX动漫，提供最新最快的在线动漫番剧资源，完全免费、无须注册、高速播放、更新及时的专业动漫网站">
+
+  <link rel="shortcut icon" href="./files/mxdongman.png">
+  <link rel="preload stylesheet" href="./files/style.9b4b7f3f.css" as="style">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF4D4F',
+            secondary: '#FF7A45',
+            dark: '#1E1E2E',
+            light: '#F5F5F5',
+            'dark-gray': '#4E4E5E',
+            'light-gray': '#E5E5E5'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .nav-link {
+        @apply relative text-dark-gray hover:text-primary transition-colors duration-300;
+      }
+      .nav-link::after {
+        @apply content-[''] absolute w-0 h-0.5 bg-primary left-0 -bottom-1 transition-all duration-300;
+      }
+      .nav-link:hover::after {
+        @apply w-full;
+      }
+      .nav-link.active {
+        @apply text-primary font-medium;
+      }
+      .nav-link.active::after {
+        @apply w-full;
+      }
+      .btn-primary {
+        @apply bg-primary hover:bg-primary/90 text-white font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+      }
+      .btn-secondary {
+        @apply bg-white border border-primary text-primary hover:bg-primary/5 font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+      }
+      .feature-card {
+        @apply bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+      }
+      .faq-title {
+        @apply text-[clamp(1.5rem,3vw,2rem)] font-bold text-dark mb-6;
+      }
+      .title {
+        @apply text-xl font-bold text-dark mb-3;
+      }
+      .details {
+        @apply text-dark-gray leading-relaxed;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 新增导航栏 -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center">
+          <img src="./files/mxdongman.png" alt="MX动漫" class="h-10 mr-2">
+          <span class="text-xl font-bold text-primary">MX动漫</span>
+        </div>
+        
+        <!-- 桌面导航 -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#about" class="nav-link">网站简介</a>
+          <a href="#features" class="nav-link">功能特点</a>
+          <a href="#steps" class="nav-link">使用步骤</a>
+          <a href="#faq" class="nav-link">常见问题</a>
+          <a href="#reviews" class="nav-link">用户评价</a>
+        </div>
+        
+        <!-- 移动端菜单按钮 -->
+        <button id="menu-toggle" class="md:hidden text-dark-gray hover:text-primary focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+      
+      <!-- 移动端导航菜单 -->
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-light-gray shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a href="#home" class="nav-link py-2 active">首页</a>
+          <a href="#about" class="nav-link py-2">网站简介</a>
+          <a href="#features" class="nav-link py-2">功能特点</a>
+          <a href="#steps" class="nav-link py-2">使用步骤</a>
+          <a href="#faq" class="nav-link py-2">常见问题</a>
+          <a href="#reviews" class="nav-link py-2">用户评价</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="Layout" data-v-b2cf3e0b="">
+      <div class="VPContent is-home" id="VPContent" data-v-b2cf3e0b="" data-v-a494bd1d="">
+        <!-- 为Hero部分添加ID -->
+        <div id="home" class="VPHome pt-24" data-v-a494bd1d="" data-v-d82743a8="">
+          <div class="VPHero has-image VPHomeHero" data-v-d82743a8="" data-v-fd2650d5="">
+            <div class="container" data-v-fd2650d5="">
+              <div class="main" data-v-fd2650d5="">
+                <h1 class="name" data-v-fd2650d5="" style="display: flex; align-items: center; white-space: nowrap;">
+                  <span style="color:#111;">MX动漫</span>
+                </h1>
+                <p class="text" data-v-fd2650d5="" style="line-height:1.2rem;margin:10px 0;"><span
+                    style="font-size:1.2rem;font-weight:400;"><strong>专注在线动漫的备用平台，樱花动漫外的好选择</strong></span><br /><span
+                    style="font-size:1rem;font-weight:400;">高清画质、无广告干扰、实时更新、免费追番体验，是动漫迷的首选平台。</span></p>
+
+                <div class="actions" data-v-fd2650d5="">
+                  <div class="action" data-v-fd2650d5=""><a class="VPButton medium brand"
+                      href="https://xmdongman.ggonav.com/" target="_blank" data-v-fd2650d5=""
+                      data-v-567ba664="">
+                      官网入口</a></div>
+
+                  <div class="action" data-v-fd2650d5=""><a class="VPButton medium alt"
+                      href="https://pan.quark.cn/s/97703bfac418" target="_blank" content="nofollow no-referrer"
+                      data-v-fd2650d5="" data-v-567ba664="">电子书/zlib资源包</a></div>
+
+                </div>
+              </div>
+
+              <div class="image" data-v-fd2650d5=""><div class="image-container" data-v-fd2650d5=""><div
+                    class="image-bg" data-v-fd2650d5=""></div><img class="VPImage image-src"
+                    src="./files/mxdongman.jpg" alt="MX动漫" data-v-6db2186b=""
+                    style="border-radius:15px;background: #fff;padding: 5px;border: 1px solid #eee;"></div></div>
+          </div>
+        </div>
+
+        <!-- 新增的网站介绍版块 -->
+        <div id="about" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            MX动漫是什么？
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-1 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8;">
+                      MX动漫是一个专注于提供丰富动漫资源的在线平台，致力于为用户提供高质量的观看体验。该网站汇集了国内外各种类型的热门动漫作品，包括日本、国产、欧美等多种分类，满足不同用户的多样化需求。无论是最新番剧还是经典老番，用户都可以通过分类浏览或关键词搜索快速找到感兴趣的内容。此外，MX动漫还支持离线下载功能，让用户在没有网络的情况下也能享受流畅的观看体验。其简洁友好的界面设计和强大的智能推荐系统进一步提升了用户体验，使其成为动漫爱好者不可错过的平台。
+                    </p>
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8; margin-top: 15px;">
+                      MX动漫作为樱花动漫的备用网站，以其纯净无广告的观看环境和及时更新的内容吸引了大量用户。其高清画质和流畅播放体验是其核心竞争力之一，同时，丰富的动漫资源和便捷的操作方式也使其在众多动漫平台中脱颖而出。
+                    </p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="features" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            MX动漫功能特点
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">1. 高清画质与流畅播放</h3>
+                    <p class="details" data-v-837f6cca="">
+                      MX动漫提供高清画质的动漫资源，支持多种清晰度选择，确保用户能够享受到最佳的观看体验。无论是手机端还是电脑端，用户都能通过简单操作实现高清流畅的播放。此外，该平台还支持离线缓存功能，用户可以随时下载喜欢的动漫进行观看，不受网络环境限制。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">2. 智能推荐与分类浏览</h3>
+                    <p class="details" data-v-837f6cca="">
+                      MX动漫通过智能推荐算法为用户推荐个性化内容，并根据类型、地区、年代等多维度对动漫进行分类管理。用户可以通过关键词搜索快速定位目标内容，也可以通过排行榜查看热门作品。这种分类清晰、功能齐全的设计让用户体验更加便捷。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">3. 互动社区与弹幕评论</h3>
+                    <p class="details" data-v-837f6cca="">
+                      MX动漫不仅是一个观看平台，还拥有强大的社区功能。用户可以在观看过程中实时发表弹幕评论，与其他观众互动交流。此外，平台还支持用户评分和评论功能，用户可以分享自己的观影感受并参考其他用户的评价来选择作品。
+                    </p>
+                  </article></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div id="steps" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            MX动漫使用步骤
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+
+                    <h3 class="title" data-v-837f6cca="">1. 注册与登录</h3>
+                    <p class="details" data-v-837f6cca="">
+                      用户首次使用MX动漫时需要注册账号，注册过程简单快捷。登录后即可进入主界面，浏览推荐内容或直接搜索感兴趣的动漫作品。对于已有账号的用户，只需输入用户名和密码即可快速登录。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">2. 分类浏览与搜索</h3>
+                    <p class="details" data-v-837f6cca="">
+                      在主界面中，用户可以通过顶部导航栏选择不同分类（如按类型、地区、年代等）浏览动漫资源。此外，用户还可以通过搜索框输入关键词快速查找特定作品。搜索结果会显示相关动漫的详细信息，包括封面图、简介和播放链接。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">3. 播放与互动</h3>
+                    <p class="details" data-v-837f6cca="">
+                      用户点击目标作品后即可进入播放页面。页面设计简洁明了，支持多种清晰度选择和播放模式切换。在播放过程中，用户可以开启弹幕功能与其他观众互动，也可以通过评论区发表自己的看法。此外，用户还可以通过点赞、分享等功能参与社区讨论。
+                    </p>
+                  </article></span>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 常见问题版块 -->
+        <div id="faq" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            MX动漫常见问题
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">无法打开网站</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 建议尝试更换浏览器或清除浏览器缓存后再试。如果问题依旧，请检查网络连接是否正常。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">广告干扰</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - MX动漫承诺无广告干扰，如果发现有广告弹出，请立即停止使用并切换到其他可靠的平台。同时，建议用户使用正规渠道下载官方应用以避免广告问题。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">无法下载离线资源</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 请检查设备存储空间是否充足，并确保网络连接稳定。如果问题依旧，请联系客服寻求帮助。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">播放卡顿</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 播放卡顿可能是由于网络不稳定或设备性能不足导致的。建议用户切换到更稳定的网络环境，并关闭后台运行的应用程序以释放更多资源。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">找不到特定作品</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 请检查关键词拼写是否正确，并尝试使用分类功能筛选目标内容。此外，也可以参考其他用户的评论和推荐来寻找类似作品。
+                    </p>
+                  </article></span>
+              </div>
+
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553=""><article
+                    class="box feature-card" data-v-837f6cca="">
+                    <h3 class="title" data-v-837f6cca="">登录失败</h3>
+                    <p class="details" data-v-837f6cca="">
+                      <strong>解决方法</strong>：<br>
+                      - 请检查用户名和密码是否正确，并确保网络连接正常。如果问题依旧，请联系客服获取帮助。
+                    </p>
+                  </article></span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 用户评价版块 -->
+        <div id="reviews" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+            用户评价
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <div class="user-info" style="display: flex; align-items: center; margin-bottom: 10px;">
+                      <img src="https://picsum.photos/id/230/40/40" alt="用户头像" style="border-radius: 50%; margin-right: 10px;">
+                      <h3 class="title" data-v-837f6cca="" style="color: red; font-weight: bold;">京东热</h3>
+                    </div>
+                    <div class="rating" style="color: #FFD700; margin-bottom: 5px;">★★★★★</div>
+                    <p class="details" data-v-837f6cca">MX动漫真的太棒了！资源丰富，画质清晰，最重要的是没有广告干扰。追番体验非常流畅！</p>
+                  </article>
+                </span>
+              </div>
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <div class="user-info" style="display: flex; align-items: center; margin-bottom: 10px;">
+                      <img src="https://picsum.photos/id/1020/40/40" alt="用户头像" style="border-radius: 50%; margin-right: 10px;">
+                      <h3 class="title" data-v-837f6cca="" style="color: red; font-weight: bold;">卜售后一会说</h3>
+                    </div>
+                    <div class="rating" style="color: #FFD700; margin-bottom: 5px;">★★★★☆</div>
+                    <p class="details" data-v-837f6cca">作为一个动漫迷，我非常喜欢MX动漫的智能推荐功能。每次都能发现一些新番好剧，非常惊喜！</p>
+                  </article>
+                </span>
+              </div>
+              <div class="grid-3 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <div class="user-info" style="display: flex; align-items: center; margin-bottom: 10px;">
+                      <img src="https://picsum.photos/id/1010/40/40" alt="用户头像" style="border-radius: 50%; margin-right: 10px;">
+                      <h3 class="title" data-v-837f6cca="" style="color: red; font-weight: bold;">用刺破伊吾</h3>
+                    </div>
+                    <div class="rating" style="color: #FFD700; margin-bottom: 5px;">★★★★★</div>
+                    <p class="details" data-v-837f6cca">MX动漫的社区功能也很棒！可以和其他观众实时互动，分享观影感受。感觉像加入了一个大家庭！</p>
+                  </article>
+                </span>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="VPFooter" data-v-b2cf3e0b="" data-v-f7fc41f4=""><div class="container" data-v-f7fc41f4=""><p class="copyright" data-v-f7fc41f4=""><strong>觉得很不错？那就按住Ctrl+D键组合，把本网站加入你的浏览器收藏夹吧！</strong></p>
+
+    <p class="copyright" data-v-f7fc41f4="">Copyright ©2025 MX动漫数字指南</p>
+         </div></footer>
+
+    </div>
+  </div>
+
+  <script>
+    // 导航栏滚动效果
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+        navbar.classList.add('py-2');
+        navbar.classList.remove('py-3');
+      } else {
+        navbar.classList.remove('shadow-md');
+        navbar.classList.add('py-3');
+        navbar.classList.remove('py-2');
+      }
+      
+      // 更新导航栏激活状态
+      const sections = document.querySelectorAll('div[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+    
+    // 移动端菜单切换
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // 关闭移动端菜单（如果打开）
+        document.getElementById('mobile-menu').classList.add('hidden');
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
